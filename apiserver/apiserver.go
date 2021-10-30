@@ -33,6 +33,6 @@ func (s *APIServer) configureRouter() {
 // HandleHello - sends back an http.HandlerFunc to send hello .
 func (s *APIServer) HandleHello() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Hello world!"))
+		w.Write([]byte("Hello World!"))
 	}
 }
